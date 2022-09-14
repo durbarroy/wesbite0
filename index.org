@@ -7,3 +7,25 @@ my knowledge base.
 
 * Physics
 * Mathematics
+* Computer Science
+
+** Operating Systems
+
+*** Linux
+
+List of linux distributions
+
+**** Debian
+**** Slackware
+**** Arch Linux
+**** Gentoo
+**** OpenSUSE
+**** RedHat
+
+*** Windows
+
+*** BSDs
+
+*** Opensolaris
+
+

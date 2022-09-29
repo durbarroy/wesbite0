@@ -2,30 +2,71 @@
 #+author: Durbar Roy
 
 Hello world!!! My name is Durbar Roy.
-This is my first website. Here I will be hosting
-my knowledge base.
+This is my first website. The information here will have
+to do with things that resonates with me.
 
 * Physics
 * Mathematics
 * Computer Science
-
 ** Operating Systems
-
 *** Linux
-
 List of linux distributions
-
-**** Debian
-**** Slackware
-**** Arch Linux
-**** Gentoo
-**** OpenSUSE
-**** RedHat
-
+- Debian
+- Slackware
+- Arch Linux
+- Gentoo
+- OpenSUSE
+- RedHat
 *** Windows
-
 *** BSDs
-
 *** Opensolaris
+** Version control
+**** Git
 
+*Some Important steps*
 
+1. Before first commit to check the
+repo status
+#+begin_src bash
+  git status
+#+end_src
+
+2. Add files to staging area
+
+- To add a particular file in the staging area
+
+#+begin_src bash
+  git add <file_name>
+#+end_src
+
+- To add all files to the staging area
+#+begin_src bash
+  git add -A
+#+end_src
+
+3. Remove files from staging area
+#+begin_src bash
+  git reset <file_name>
+#+end_src
+
+4. To remove all files from the staging area
+
+- To put all files in the staging area to the repository we
+  have to perform a commit
+#+begin_src bash
+  git commit -m "My first commit"
+#+end_src
+
+5. To view logs
+#+begin_src bash
+  git log
+#+end_src
+
+6. Pull and push changes to remote repository
+#+begin_src bash
+  git pull origin main
+#+end_src
+
+#+begin_src bash
+  git push origin main
+#+end_src

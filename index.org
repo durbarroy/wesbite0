@@ -25,13 +25,12 @@ List of linux distributions
 
 *Some Important steps*
 
-1. Before first commit to check the
-repo status
+***** Before first commit to check the repo status
 #+begin_src bash
   git status
 #+end_src
 
-2. Add files to staging area
+***** Add files to staging area
 
 - To add a particular file in the staging area
 
@@ -44,12 +43,12 @@ repo status
   git add -A
 #+end_src
 
-3. Remove files from staging area
+***** Remove files from staging area
 #+begin_src bash
   git reset <file_name>
 #+end_src
 
-4. To remove all files from the staging area
+To remove all files from the staging area
 
 - To put all files in the staging area to the repository we
   have to perform a commit
@@ -57,12 +56,12 @@ repo status
   git commit -m "My first commit"
 #+end_src
 
-5. To view logs
+***** To view logs
 #+begin_src bash
   git log
 #+end_src
 
-6. Pull and push changes to remote repository
+***** Pull and push changes to remote repository
 #+begin_src bash
   git pull origin main
 #+end_src

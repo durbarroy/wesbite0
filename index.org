@@ -1,4 +1,4 @@
-#+SETUPFILE: theme-bigblow.setup
+#+SETUPFILE: theme-readtheorg.setup
 
 #+title: Welcome to my website :)
 #+author: Durbar Roy
@@ -16,7 +16,7 @@ My major research area is in the field of Fluid Mechanics and Thermal Sciences. 
 
 * Physics
 
-** Lagrnagian of the Standard Model of Particle Physics
+** Lagrangian of the Standard Model of Particle Physics
 
 [[file:standard-model-of-particle-physics-lagrangian.jpeg]]
   

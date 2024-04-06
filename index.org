@@ -1,11 +1,21 @@
-#+title: Welcome to my first website: website0
+#+title: Welcome to my website :)
 #+author: Durbar Roy
 
 Hello world!!! My name is Durbar Roy.
-This is my first website. The information here will have
+This is my website. The information here will have
 to do with things that resonates with me.
+  
 
 * Physics
+
+** Standard Model of Particle Physics
+#+caption: Lagrangian of the Standard Model of Particle Physics
+#+name: lag-std-model-par-phy
+#+attr_org: :width 500
+#+attr_latex: :width 1in
+
+- [[file:standard-model-of-particle-physics-lagrangian.jpeg]]
+  
 * Mathematics
 * Computer Science
 ** Operating Systems

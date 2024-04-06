@@ -3,196 +3,23 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-04-07 Sun 01:19 -->
+<!-- 2024-04-07 Sun 01:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Welcome to my website :)</title>
 <meta name="author" content="Durbar Roy" />
 <meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
-</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/hideshow.css"/>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -201,24 +28,24 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge485a4b">1. Introduction</a></li>
-<li><a href="#org079be2a">2. Physics</a>
+<li><a href="#org5692482">1. Introduction</a></li>
+<li><a href="#orgf83d850">2. Physics</a>
 <ul>
-<li><a href="#org9293f1a">2.1. Lagrnagian of the Standard Model of Particle Physics</a></li>
+<li><a href="#org0d73d50">2.1. Lagrnagian of the Standard Model of Particle Physics</a></li>
 </ul>
 </li>
-<li><a href="#orgde3cb3c">3. Mathematics</a></li>
-<li><a href="#org9174f42">4. Computer Science</a>
+<li><a href="#org32edae8">3. Mathematics</a></li>
+<li><a href="#org10341f9">4. Computer Science</a>
 <ul>
-<li><a href="#org21bddf3">4.1. Operating Systems</a>
+<li><a href="#org44d5e06">4.1. Operating Systems</a>
 <ul>
-<li><a href="#org6f39fda">4.1.1. Linux</a></li>
-<li><a href="#org81f383f">4.1.2. Windows</a></li>
-<li><a href="#org0fc5095">4.1.3. BSDs</a></li>
-<li><a href="#orgf5c4f56">4.1.4. Opensolaris</a></li>
+<li><a href="#org4679f5d">4.1.1. Linux</a></li>
+<li><a href="#org775008b">4.1.2. Windows</a></li>
+<li><a href="#orge8f9772">4.1.3. BSDs</a></li>
+<li><a href="#org667bff9">4.1.4. Opensolaris</a></li>
 </ul>
 </li>
-<li><a href="#org90f541c">4.2. Version control</a></li>
+<li><a href="#org6070fcd">4.2. Version control</a></li>
 </ul>
 </li>
 </ul>
@@ -226,8 +53,8 @@
 </div>
 
 
-<div id="outline-container-orge485a4b" class="outline-2">
-<h2 id="orge485a4b"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-org5692482" class="outline-2">
+<h2 id="org5692482"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Hello world!!! My name is Durbar Roy.
@@ -243,15 +70,15 @@ My major research area is in the field of Fluid Mechanics and Thermal Sciences. 
 </div>
 
 
-<div id="outline-container-org079be2a" class="outline-2">
-<h2 id="org079be2a"><span class="section-number-2">2.</span> Physics</h2>
+<div id="outline-container-orgf83d850" class="outline-2">
+<h2 id="orgf83d850"><span class="section-number-2">2.</span> Physics</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org9293f1a" class="outline-3">
-<h3 id="org9293f1a"><span class="section-number-3">2.1.</span> Lagrnagian of the Standard Model of Particle Physics</h3>
+<div id="outline-container-org0d73d50" class="outline-3">
+<h3 id="org0d73d50"><span class="section-number-3">2.1.</span> Lagrnagian of the Standard Model of Particle Physics</h3>
 <div class="outline-text-3" id="text-2-1">
 
-<div id="org52e2d0f" class="figure">
+<div id="orgf4cc89c" class="figure">
 <p><img src="standard-model-of-particle-physics-lagrangian.jpeg" alt="standard-model-of-particle-physics-lagrangian.jpeg" />
 </p>
 </div>
@@ -259,19 +86,19 @@ My major research area is in the field of Fluid Mechanics and Thermal Sciences. 
 </div>
 </div>
 
-<div id="outline-container-orgde3cb3c" class="outline-2">
-<h2 id="orgde3cb3c"><span class="section-number-2">3.</span> Mathematics</h2>
+<div id="outline-container-org32edae8" class="outline-2">
+<h2 id="org32edae8"><span class="section-number-2">3.</span> Mathematics</h2>
 </div>
-<div id="outline-container-org9174f42" class="outline-2">
-<h2 id="org9174f42"><span class="section-number-2">4.</span> Computer Science</h2>
+<div id="outline-container-org10341f9" class="outline-2">
+<h2 id="org10341f9"><span class="section-number-2">4.</span> Computer Science</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org21bddf3" class="outline-3">
-<h3 id="org21bddf3"><span class="section-number-3">4.1.</span> Operating Systems</h3>
+<div id="outline-container-org44d5e06" class="outline-3">
+<h3 id="org44d5e06"><span class="section-number-3">4.1.</span> Operating Systems</h3>
 <div class="outline-text-3" id="text-4-1">
 </div>
-<div id="outline-container-org6f39fda" class="outline-4">
-<h4 id="org6f39fda"><span class="section-number-4">4.1.1.</span> Linux</h4>
+<div id="outline-container-org4679f5d" class="outline-4">
+<h4 id="org4679f5d"><span class="section-number-4">4.1.1.</span> Linux</h4>
 <div class="outline-text-4" id="text-4-1-1">
 <p>
 List of linux distributions
@@ -286,22 +113,22 @@ List of linux distributions
 </ul>
 </div>
 </div>
-<div id="outline-container-org81f383f" class="outline-4">
-<h4 id="org81f383f"><span class="section-number-4">4.1.2.</span> Windows</h4>
+<div id="outline-container-org775008b" class="outline-4">
+<h4 id="org775008b"><span class="section-number-4">4.1.2.</span> Windows</h4>
 </div>
-<div id="outline-container-org0fc5095" class="outline-4">
-<h4 id="org0fc5095"><span class="section-number-4">4.1.3.</span> BSDs</h4>
+<div id="outline-container-orge8f9772" class="outline-4">
+<h4 id="orge8f9772"><span class="section-number-4">4.1.3.</span> BSDs</h4>
 </div>
-<div id="outline-container-orgf5c4f56" class="outline-4">
-<h4 id="orgf5c4f56"><span class="section-number-4">4.1.4.</span> Opensolaris</h4>
+<div id="outline-container-org667bff9" class="outline-4">
+<h4 id="org667bff9"><span class="section-number-4">4.1.4.</span> Opensolaris</h4>
 </div>
 </div>
-<div id="outline-container-org90f541c" class="outline-3">
-<h3 id="org90f541c"><span class="section-number-3">4.2.</span> Version control</h3>
+<div id="outline-container-org6070fcd" class="outline-3">
+<h3 id="org6070fcd"><span class="section-number-3">4.2.</span> Version control</h3>
 <div class="outline-text-3" id="text-4-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgd75cab8"></a>Git<br />
+<li><a id="orgb149d34"></a>Git<br />
 <div class="outline-text-5" id="text-4-2-0-1">
 <p>
 <b>Some Important steps</b>
@@ -309,7 +136,7 @@ List of linux distributions
 </div>
 
 <ol class="org-ol">
-<li><a id="org3cab625"></a>Before first commit to check the repo status<br />
+<li><a id="org87d75d8"></a>Before first commit to check the repo status<br />
 <div class="outline-text-6" id="text-4-2-0-1-1">
 <div class="org-src-container">
 <pre class="src src-bash">git status
@@ -318,7 +145,7 @@ List of linux distributions
 </div>
 </li>
 
-<li><a id="org1dbf1f7"></a>Add files to staging area<br />
+<li><a id="orgf390671"></a>Add files to staging area<br />
 <div class="outline-text-6" id="text-4-2-0-1-2">
 <ul class="org-ul">
 <li>To add a particular file in the staging area</li>
@@ -339,7 +166,7 @@ List of linux distributions
 </div>
 </li>
 
-<li><a id="org43d44fe"></a>Remove files from staging area<br />
+<li><a id="org14359e2"></a>Remove files from staging area<br />
 <div class="outline-text-6" id="text-4-2-0-1-3">
 <div class="org-src-container">
 <pre class="src src-bash">git reset &lt;file_name&gt;
@@ -361,7 +188,7 @@ have to perform a commit</li>
 </div>
 </li>
 
-<li><a id="org4e39aa3"></a>To view logs<br />
+<li><a id="org1f5233a"></a>To view logs<br />
 <div class="outline-text-6" id="text-4-2-0-1-4">
 <div class="org-src-container">
 <pre class="src src-bash">git log
@@ -370,7 +197,7 @@ have to perform a commit</li>
 </div>
 </li>
 
-<li><a id="org3b5aba0"></a>Pull and push changes to remote repository<br />
+<li><a id="org3562905"></a>Pull and push changes to remote repository<br />
 <div class="outline-text-6" id="text-4-2-0-1-5">
 <div class="org-src-container">
 <pre class="src src-bash">git pull origin main
@@ -391,7 +218,7 @@ have to perform a commit</li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Durbar Roy</p>
-<p class="date">Created: 2024-04-07 Sun 01:19</p>
+<p class="date">Created: 2024-04-07 Sun 01:32</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

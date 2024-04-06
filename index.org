@@ -1,4 +1,4 @@
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/readtheorg.setup
+#+SETUPFILE: theme-bigblow.setup
 
 #+title: Welcome to my website :)
 #+author: Durbar Roy

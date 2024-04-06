@@ -1,6 +1,8 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/readtheorg.setup
+
 #+title: Welcome to my website :)
 #+author: Durbar Roy
-#+attr_html: :style background-color:#aecfb5;
+
 
 * Introduction
 

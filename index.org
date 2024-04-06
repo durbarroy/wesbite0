@@ -8,13 +8,9 @@ to do with things that resonates with me.
 
 * Physics
 
-** Standard Model of Particle Physics
-#+caption: Lagrangian of the Standard Model of Particle Physics
-#+name: lag-std-model-par-phy
-#+attr_org: :width 500
-#+attr_latex: :width 1in
+** Lagrnagian of the Standard Model of Particle Physics
 
-- [[file:standard-model-of-particle-physics-lagrangian.jpeg]]
+[[file:standard-model-of-particle-physics-lagrangian.jpeg]]
   
 * Mathematics
 * Computer Science

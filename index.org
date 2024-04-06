@@ -1,4 +1,4 @@
-#+SETUPFILE: theme-bigblow.setup
+#+SETUPFILE: theme-readtheorg.setup
 
 #+title: Welcome to my website :)
 #+author: Durbar Roy
